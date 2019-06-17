@@ -1,5 +1,6 @@
 package model.services;
 
+//significa que ela implementa o taxservice, pra ficar mais facil alterações futuras
 public class BrazilTaxService implements TaxService {
 
 	public double tax(double amount) {

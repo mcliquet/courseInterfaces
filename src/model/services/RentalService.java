@@ -8,8 +8,10 @@ public class RentalService {
 	private Double pricePerDay;
 	private Double pricePerHour;
 	
+	//dependência da interface taxservice
 	private TaxService taxService;
 
+	//instanciado com o taxservice genérico, em interface, pra poder ser escolhido ao instanciar no Program
 	public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) {
 		this.pricePerDay = pricePerDay;
 		this.pricePerHour = pricePerHour;
